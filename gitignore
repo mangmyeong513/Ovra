@@ -1,0 +1,42 @@
+# ---- Node / Monorepo 기본 ----
+node_modules/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- 빌드 산출물 ----
+dist/
+.build/
+.cache/
+.tmp/
+coverage/
+*.tsbuildinfo
+
+# ---- Vite / 캐시 ----
+.vite/
+
+# ---- 환경변수 ----
+.env
+.env.*
+!.env.example
+
+# ---- 시스템/OS ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE / 편집기 ----
+.vscode/
+.idea/
+*.swp
+
+# ---- 서버 런타임 업로드/캐시 (필요 시 경로 조정) ----
+server/public/uploads/
+server/public/.cache/
+
+# ---- 압축/패키지 산출물(선택) ----
+# 배포/릴리스용 zip을 커밋하지 않으려면 활성화
+# *.zip
+*.tar.gz
